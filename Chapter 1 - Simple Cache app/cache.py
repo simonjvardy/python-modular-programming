@@ -66,7 +66,7 @@ def _remove_oldest_entry():
     """
     global _cache
     oldest = None
-    for key in _cache:
+    for key in _cache.keys():
         if oldest is None:
             oldest = key
         elif _cache[key][0] < _cache[oldest][0]:

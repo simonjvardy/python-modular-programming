@@ -12,7 +12,7 @@ def random_string(length):
     characters with a given length.
     """
     str = ''
-    for str in range(length):
+    for i in range(length):
         str = str + random.choice(string.ascii_letters)
     return str
 
