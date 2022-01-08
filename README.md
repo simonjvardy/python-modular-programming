@@ -1,12 +1,12 @@
 ![My Logo](https://github.com/simonjvardy/simonjvardy/blob/main/assets/img/GitHub-name.png)
 
-# Python - PDF Table Extractor App #
+# Python - Modular Programming learning files #
 
 ## About ##
 
-This small utility app was created to help with the tedious task of extracting data contained in tables of vendor PDF product data sheets.
+This repo contains study notes and modules created while working through the book:
+"Modular Programming with Python" by Erik Westra, [Packt Publishing](htps://www.packtpub.com/books/content/support), 2016
 
-[Tabula](https://tabula.technology/) has been used previously and is highly recommended, but I needed something that I could customise to my needs a little more.
 
 ---
 
@@ -18,12 +18,6 @@ This small utility app was created to help with the tedious task of extracting d
   - Used to create the main application functionality
 
 ### **Libraries / Packages / Modules** ###
-
-- [Pandas](https://flask.palletsprojects.com/en/2.0.x/)
-  - Flask is a micro web framework written in Python.
-
-- [Camelot](https://pypi.org/project/camelot-py/)
-  - Camelot is a Python library that can help you extract tables from PDFs.
 
 ### **Tools** ###
 
@@ -45,15 +39,10 @@ Ensure the following are installed locally on your computer:
 - [Python 3.6 or higher](https://www.python.org/downloads/)
 - [PIP3](https://pypi.org/project/pip/) Python package installer
 - [Git](https://git-scm.com/) Version Control
-- [Ghostscript](https://www.ghostscript.com/) Ghostscript is an interpreter for the PostScript®  language and PDF files
-
-#### **Online Camelot Installation Guide** ####
-
-- [Camelot Documentation](https://camelot-py.readthedocs.io/en/master/)
 
 #### **Cloning the GitHub repository** ####
 
-- navigate to [simonjvardy/python-pdf-table-extractor](https://github.com/simonjvardy/python-pdf-table-extractor) GitHub repository.
+- navigate to [simonjvardy/python-modular-programming](https://github.com/simonjvardy/python-modular-programming) GitHub repository.
 - Click the **Code** button
 - **Copy** the clone url in the dropdown menu
 - Using your favourite IDE open up your preferred terminal.
@@ -62,7 +51,7 @@ Ensure the following are installed locally on your computer:
 Copy the following code and input it into your terminal to clone Sportswear-Online:
 
 ```Python
-git clone https://github.com/simonjvardy/python-pdf-table-extractor.git
+git clone https://github.com/simonjvardy/python-modular-programming.git
 ```
 
 #### **Creation of a Python Virtual Environment** ####
@@ -82,11 +71,11 @@ pip install -r requirements.txt
 - TODO
 
 ```Python
-python app.py
+# TODO
 ```
 
 ---
 
 ## Acknowledgements ##
 
-- [freeCodeCamp](https://www.youtube.com/watch?v=s8XjEuplx_U) YouTube video Python automation tutorial.
+- "Modular Programming with Python" by Erik Westra, [Packt Publishing](htps://www.packtpub.com/books/content/support), 2016
