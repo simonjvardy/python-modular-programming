@@ -9,7 +9,7 @@ import cache
 def random_string(length):
     """
     Function to generate a string of random lower and uppercase ascii
-    characters with a string length passed as the argument.
+    characters with a given length.
     """
     str = ''
     for str in range(length):
