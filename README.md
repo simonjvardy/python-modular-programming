@@ -5,8 +5,8 @@
 ## About ##
 
 This repo contains study notes and modules created while working through the book:
-"Modular Programming with Python" by Erik Westra, [Packt Publishing](https://www.packtpub.com/books/content/support), 2016
 
+"Modular Programming with Python" by Erik Westra, [Packt Publishing](https://www.packtpub.com/books/content/support), 2016
 
 ---
 
