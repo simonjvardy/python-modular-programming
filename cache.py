@@ -45,11 +45,17 @@ def get(key):
 
 
 def contains(key):
+    """
+    Function to return the keys contained in the cache dictionary
+    """
     global _cache
     return key in _cache
 
 
 def size():
+    """
+    Function to return the current size of the cache dictionary
+    """
     global _cache
     return len(_cache)
 

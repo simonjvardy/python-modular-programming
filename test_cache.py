@@ -7,10 +7,14 @@ import string
 import cache
 
 def random_string(length):
-    s = ''
-    for i in range(length):
-        s = s + random.choice(string.ascii_letters)
-    return s
+    """
+    Function to generate a string of random lower and uppercase ascii
+    characters with a string length passed as the argument.
+    """
+    str = ''
+    for str in range(length):
+        str = str + random.choice(string.ascii_letters)
+    return str
 
 
 cache.init()
