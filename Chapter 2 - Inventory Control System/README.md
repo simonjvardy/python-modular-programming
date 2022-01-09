@@ -4,7 +4,7 @@
 
 ## About ##
 
-This app is a sample program that allows the user to keep track of a company's stock inventory.
+This app is a sample program using a modular design that allows the user to keep track of a company's stock inventory.
 
 ---
 
@@ -24,6 +24,49 @@ User Stories:
 - As a user, I want to generate a report  on the current inventory items.
 - As a user, I want to generate a report of the inventory items needing to be reordered.
 - As a user, I want to quit the program.
+
+![App Structure](static/app_structure.png)
+
+---
+
+## Features ##
+
+### **The Data Storage Module** ##
+
+- To keep the program as simple as possible, for now, two major design assumptions will be taken:
+  - The list of products and locations will be hard-coded into the program.
+  - The list of inventory items will be stored in memory and saved to disk whenever the list changes.
+
+- sqlite could be used as a datastore but the aim of this exercise is to explore the overall structure of the program, so keeping the implementation as small as possible is desirable.
+
+### **The User Interface (UI) Module** ###
+
+- Again, to keep the program as simple as possible, for now, major design assumptios are:
+  - A simple text-based command-line interface will be used
+    - `print()` and `input()` statements will be used for user interaction and displaying data.
+  - Creating a GUI is possible but beyond the scope of this exercise as the aim and overall structure of the program doesn't warrant it yet.
+
+User Actions:
+
+|Action|Action Code|
+|---|---|
+|Add an inventory item|`ADD`|
+|Remove an inventory item|`REMOVE`|
+|Generate a report of the current inventory items|`INVENTORY_REPORT`|
+|Generate a report of the inventory items that need to be re-ordered|`REORDER_REPORT`|
+|Quit the program|`QUIT`|
+
+### **The Report Generator Module** ###
+
+- Two types of reports will be created for the user:
+  - Current inventory items report (INVENTORY_REPORT)
+  - Item re-order report (REORDER_REPORT)
+
+### **The Main Program** ###
+
+- This isn't stictly a module, but a standard Python source file that the user runs to start the program.
+
+---
 
 ## Technologies ##
 
