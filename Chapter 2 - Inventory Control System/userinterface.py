@@ -99,6 +99,17 @@ def prompt_for_location():
         return location_code
 
 
+def show_report(report):
+    """
+    Function to show the generated reports to the user
+    """
+    print()
+    for line in report:
+        print(line)
+    print() 
+
+
+
 def show_error(err_msg):
     """
     Very simple error handling function for
