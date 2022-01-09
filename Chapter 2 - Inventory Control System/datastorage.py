@@ -6,12 +6,12 @@ import os.path
 
 
 def init():
-    """"""
+    """init function to load the inventory items data"""
     _load_items()
 
 
 def items():
-    """"""
+    """Makes the inventory items data stored in memory available to the user"""
     global _items
     return _items
 
@@ -23,8 +23,9 @@ def products():
 
 
 def locations():
-    """"""
-    pass
+    """Makes the locations list stored in memory available to the user"""
+    global _locations
+    return _locations
 
 
 def add_item(product_code, location_code):
