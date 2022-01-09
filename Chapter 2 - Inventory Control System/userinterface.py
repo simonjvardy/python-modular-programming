@@ -97,3 +97,13 @@ def prompt_for_location():
 
         location_code = datastorage.locations()[n-1][0]
         return location_code
+
+
+def show_error(err_msg):
+    """
+    Very simple error handling function for
+    user input errors feedback
+    """
+    print()
+    print(err_msg)
+    print()

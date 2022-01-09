@@ -58,7 +58,10 @@ def main():
                 location = userinterface.prompt_for_location()
                 if location is not None:
                     if not datastorage.remove_item(product, location):
-                        pass  # What to do?
+                        userinterface.show_error(
+                            "There is no product with " +
+                            "that code at that location!"
+                        )
 
 if __name__ == "__main__":
     main()
