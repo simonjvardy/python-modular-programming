@@ -27,13 +27,22 @@ def locations():
 
 
 def add_item(product_code, location_code):
-    """"""
-    pass
+    """Add new product items to the stored list"""
+    global _items
+    _items.append((prodict_code, location_code))
+    _save_items()
 
 
 def remove_item(product_code, location_code):
-    """"""
-    pass
+    """Delete product items from the stored list"""
+    global _items
+    for i in range(len(_items)):
+        prod_code,loc_code = _items[i]
+        if prod_code == product_code and loc_code == location_code:
+            del _items[i]
+            _save_items()
+            return True
+        return False
 
 
 def set_products(products):
