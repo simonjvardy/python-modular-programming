@@ -112,24 +112,13 @@ Copy the following code and input it into your terminal to clone Sportswear-Onli
 git clone https://github.com/simonjvardy/python-modular-programming.git
 ```
 
-#### **Creation of a Python Virtual Environment** ####
-
-*Note: The process may be different depending upon your own OS - please follow this [Python help guide](https://python.readthedocs.io/en/latest/library/venv.html) to understand how to create a virtual environment.*
-
-#### **Install the Python Libraries** ####
-
-Run the following command in your terminal window:
-
-```Python
-pip install -r requirements.txt
-```
-
 #### **Run the application locally** ####
 
-- TODO
+- Open the terminal and run the following commands: 
 
 ```Python
-# TODO
+cd 'Chapter 2 - Inventory Control System'
+python main.py
 ```
 
 ---

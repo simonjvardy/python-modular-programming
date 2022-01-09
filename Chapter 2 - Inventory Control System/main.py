@@ -14,9 +14,7 @@ def main():
     """
     datastorage.init()  # Load the JSON data into memory
 
-    """
-    Build the example products list data
-    """
+    # Build the example products list data
     datastorage.set_products([
         ("SKU123", "4 mm flat-headed wood screw", 50),
         ("SKU145", "6 mm flat-headed wood screw", 50),
@@ -26,9 +24,7 @@ def main():
         ("SKU185", "8 mm metal self-tapping screw", 20),
     ])
 
-    """
-    Build the example locations data
-    """
+    # Build the example locations data
     datastorage.set_location([
         ("S1A1", "Shelf 1, Aisle 1"),
         ("S2A1", "Shelf 2, Aisle 1"),
