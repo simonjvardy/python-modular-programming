@@ -17,8 +17,9 @@ def items():
 
 
 def products():
-    """"""
-    pass
+    """Makes the procuct items list stored in memory available to the user"""
+    global _products
+    return _products
 
 
 def locations():
@@ -29,7 +30,7 @@ def locations():
 def add_item(product_code, location_code):
     """Add new product items to the stored list"""
     global _items
-    _items.append((prodict_code, location_code))
+    _items.append((product_code, location_code))
     _save_items()
 
 
@@ -41,23 +42,25 @@ def remove_item(product_code, location_code):
         if prod_code == product_code and loc_code == location_code:
             del _items[i]
             _save_items()
-            return True
-        return False
+            return True  # Returns True if the deletion was successful
+        return False  # Returns False if the deletion was unsuccessful
 
 
 def set_products(products):
-    """"""
-    pass
+    """Sets the list of procuct items to memory"""
+    global _products
+    _products = products
 
 
 def set_location(locations):
-    """"""
-    pass
+    """Sets the list of locations to memory"""
+    global _locations
+    _locations = locations
 
 
 def _load_items():
     """Load the items data from a JSON file"""
-    global _load_items
+    global _items
     if os.path.exists("items.json"):
         f = open("items.json", "r")
         _items = json.loads(f.read())
@@ -68,7 +71,7 @@ def _load_items():
 
 def _save_items():
     """Save the list of inventory items to disk"""
-    global _load_items
+    global _items
     f = open("items.json", "w")
     f.write(json.dumps(_items))
     f.close
