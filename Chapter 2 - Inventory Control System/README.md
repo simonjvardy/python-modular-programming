@@ -114,7 +114,7 @@ git clone https://github.com/simonjvardy/python-modular-programming.git
 
 #### **Run the application locally** ####
 
-- Open the terminal and run the following commands: 
+- Open the terminal and run the following commands:
 
 ```Python
 cd 'Chapter 2 - Inventory Control System'
